@@ -1,0 +1,380 @@
+[
+{
+  "iDarticulo": 1,
+  "Descripcion": "Tornillo 10 X25",
+  "iDfamilia": "1",
+  "precioCoste":"34",
+  "imagen": "Tornillo.jpg"
+},
+  {
+    "iDarticulo": 2,
+    "Descripcion": "Tornillo cabeza 10 Y25",
+    "iDfamilia": "1",
+    "precioCoste":"34",
+    "imagen": "Tornillo2.jpg"
+  },
+{"iDarticulo": 3,
+"Descripcion": "Arandela 12",
+"iDfamilia": "1",
+  "precioCoste":"123.67",
+"imagen": "arandela.jpg"
+},
+  {"iDarticulo": 4,
+    "Descripcion": "Rodamiento Trasero EjeDereco",
+    "iDfamilia": "2",
+    "precioCoste":"10",
+    "imagen": "rodamiento.jpg"
+  },
+  {
+    "iDarticulo": 5,
+    "Descripcion": "Tornillo del 10",
+    "iDfamilia": "1",
+    "precioCoste":"81",
+    "imagen": "TornilloSimple.jpg"
+  }
+,
+  {
+    "iDarticulo": 6,
+    "Descripcion": "Rodamiento Doble V",
+    "iDfamilia": "2",
+    "precioCoste":"81",
+    "imagen": "RDobleV.jpg"
+  }
+,
+  {
+    "iDarticulo": 7,
+    "Descripcion": "Rodamiento XL_U_L",
+    "iDfamilia": "2",
+    "precioCoste":"81",
+    "imagen": "rX_Y_L.jpg"
+  },
+  {
+    "iDarticulo": 8,
+    "Descripcion": "Rosca Fina x12_24",
+    "iDfamilia": "1",
+    "precioCoste":"81",
+    "imagen": "tornilloFino.png"
+  },
+  {
+    "iDarticulo": 9,
+    "Descripcion": "Electrodos soldadura Portatil",
+    "iDfamilia": "3",
+    "precioCoste":"81",
+    "imagen": "electrodos.png"
+  },
+  {
+    "iDarticulo":10,
+    "Descripcion": "Electrodos soldadura Cordón Gruesol",
+    "iDfamilia": "3",
+    "precioCoste":"81",
+    "imagen": "electrodoGrueso.jpg"
+  },
+  {
+    "iDarticulo": 11,
+    "Descripcion": "Sellador Silicona",
+    "iDfamilia": "3",
+    "precioCoste":"81",
+    "imagen": "SelladorSilicona.jpg"
+  },
+  {
+    "iDarticulo": 12,
+    "Descripcion": "Electrodos Silicona de pistola",
+    "iDfamilia": "3",
+    "precioCoste":"81",
+    "imagen": "siliconaPistola.jpg"
+  }
+,
+  {
+    "iDarticulo": 13,
+    "Descripcion": "Taladro",
+    "iDfamilia": "4",
+    "precioCoste":"81",
+    "imagen": "taladro.jpg"
+  }
+  ,
+  {
+    "iDarticulo": 14,
+    "Descripcion": "Martillo",
+    "iDfamilia": "4",
+    "precioCoste":"81",
+    "imagen": "martillo.jpg"
+  },
+  {
+    "iDarticulo": 13,
+    "Descripcion": "Destornillador",
+    "iDfamilia": "4",
+    "precioCoste":"81",
+    "imagen": "destornillador.jpg"
+  },
+  {
+    "iDarticulo": 16,
+    "Descripcion": "Maquina Soldadura Precision",
+    "iDfamilia": "5",
+    "precioCoste":"81",
+    "imagen": "soldaduraPrecision.jpg"
+  },
+  {
+    "iDarticulo": 17,
+    "Descripcion": "Lijadora Industrial",
+    "iDfamilia": "5",
+    "precioCoste":"81",
+    "imagen": "LijadoraIndustrial.jpg"
+  }
+  ,
+  {
+    "iDarticulo": 18,
+    "Descripcion": "Chapa de acero modelo Abrahan",
+    "iDfamilia": "8",
+    "precioCoste":"81",
+    "imagen": "chapaAceroAbrahan.jpg"
+  } ,
+  {
+    "iDarticulo": 19,
+    "Descripcion": "Chapa Estandar Pulida",
+    "iDfamilia": "8",
+    "precioCoste":"81",
+    "imagen": "chapaLisa.jpg"
+  } ,
+  {
+    "iDarticulo": 20,
+    "Descripcion": "Angulo Acero X1",
+    "iDfamilia": "8",
+    "precioCoste":"81",
+    "imagen": "AnguloAceroX1.jpg"
+  }  
+  
+   ,
+  {
+    "iDarticulo": 21,
+    "Descripcion": "Neumaticos Combo",
+    "iDfamilia": "7",
+    "precioCoste":"81",
+    "imagen": "ComboNeumaticos.jpg"
+  }   ,
+  {
+    "iDarticulo": 22,
+    "Descripcion": "Neumaticos Moto",
+    "iDfamilia": "8",
+    "precioCoste":"81",
+    "imagen": "neumaticosMoto.jpg"
+  }   ,
+  {
+    "iDarticulo": 23,
+    "Descripcion": "Neumatico Tractor Agricola",
+    "iDfamilia": "7",
+    "precioCoste":"81",
+    "imagen": "tractor.jpg"
+  } ,
+  {
+    "iDarticulo": 24,
+    "Descripcion": "Base",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Base.png"
+  },
+  {
+    "iDarticulo": 26,
+    "Descripcion": "Bateria",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Bateria.png"
+  }  ,
+  {
+    "iDarticulo": 25,
+    "Descripcion": "BatHolder",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "BatHolder.png"
+  }  ,
+  {
+    "iDarticulo": 27,
+    "Descripcion": "Buzzer",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Buzzer.png"
+  }  ,
+  {
+    "iDarticulo": 28,
+    "Descripcion": "CintaBateria",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "CintaBateria.png"
+  }  ,
+  {
+    "iDarticulo": 29,
+    "Descripcion": "ControlVuelo",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "ControlVuelo.png"
+  }  ,
+  {
+    "iDarticulo": 30,
+    "Descripcion": "cover",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "cover.png"
+  }  ,
+  {
+    "iDarticulo": 37,
+    "Descripcion": "HeliceCw",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "HeliceCCw.png"
+  }  ,
+  {
+    "iDarticulo": 32,
+    "Descripcion": "Esc",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Esc.png"
+  }  ,
+  {
+    "iDarticulo": 33,
+    "Descripcion": "ESHolder",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "ESHolder.png"
+  }  ,
+  {
+    "iDarticulo": 31,
+    "Descripcion": "FcHolder",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "FcHolder.png"
+  }  ,
+  {
+    "iDarticulo": 34,
+    "Descripcion": "GadgetBowl",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "GadgetBowl.png"
+  }  ,
+  {
+    "iDarticulo": 35,
+    "Descripcion": "GadgetHolder",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "GadgetHolder.png"
+  }  ,
+  {
+    "iDarticulo": 37,
+    "Descripcion": "HeliceCw",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "HeliceCw.png"
+  }  ,
+  {
+    "iDarticulo": 38,
+    "Descripcion": "leg",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "leg.png"
+  }  ,
+  {
+    "iDarticulo": 39,
+    "Descripcion": "legoChair",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "legoChair.png"
+  }  ,
+  {
+    "iDarticulo": 40,
+    "Descripcion": "Llave",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Llave.png"
+  }  ,
+  {
+    "iDarticulo": 41,
+    "Descripcion": "M2",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "M2.png"
+  }  ,
+  {
+    "iDarticulo": 42,
+    "Descripcion": "M3",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "M3.png"
+  }  ,
+  {
+    "iDarticulo": 43,
+    "Descripcion": "Montaje",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Montaje.png"
+  }  ,
+  {
+    "iDarticulo": 44,
+    "Descripcion": "mosquito",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "mosquito.png"
+  }  ,
+  {
+    "iDarticulo": 45,
+    "Descripcion": "Motor",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Motor.png"
+  }  ,
+  {
+    "iDarticulo": 46,
+    "Descripcion": "PopGuardHolder",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "PopGuardHolder.png"
+  }  ,
+  {
+    "iDarticulo": 47,
+    "Descripcion": "PropGuard",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "PropGuard.png"
+  }    
+  ,
+  {
+    "iDarticulo": 48,
+    "Descripcion": "Protectores",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Protectores.png"
+  }    ,
+  {
+    "iDarticulo": 49,
+    "Descripcion": "receptor",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "receptor.png"
+  }    ,
+  {
+    "iDarticulo": 50,
+    "Descripcion": "soporteMotor",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "soporteMotor.png"
+  }    ,
+  {
+    "iDarticulo": 51,
+    "Descripcion": "Tuerca",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "Tuerca.png"
+  }    ,
+  {
+    "iDarticulo": 52,
+    "Descripcion": "TuercaDerecha",
+    "iDfamilia": "13",
+    "precioCoste":"3",
+    "imagen": "TuercaDerecha.png"
+  }    ,
+  {
+    "iDarticulo": 53,
+    "Descripcion": "TuercaIzquierda",
+    "iDfamilia": "8",
+    "precioCoste":"3",
+    "imagen": "TuercaIzquierda.png"
+  }    
+]
+ 

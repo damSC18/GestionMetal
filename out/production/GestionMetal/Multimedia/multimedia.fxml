@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Multimedia.ControladorMultimedia">
+   <children>
+      <Label layoutX="-266.0" layoutY="306.0" prefHeight="64.0" prefWidth="644.0" rotate="-90.0" style="-fx-background-color:ccb;" text="                 M        E          T          A          L    " textFill="WHITE">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="106.0" layoutY="43.0" prefHeight="46.0" prefWidth="1076.0">
+         <items>
+            <Button fx:id="botonEscandallos1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Finalizar" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Salir " textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="botonEscandallos11" alignment="TOP_LEFT" mnemonicParsing="false" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Acerca de ..." textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </items>
+      </ToolBar>
+      <Label layoutX="147.0" layoutY="205.0" prefHeight="36.0" prefWidth="226.0" text="Id" textFill="#3e8cda">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="268.0" prefHeight="36.0" prefWidth="226.0" text="Descripción" textFill="#3e8cda">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="341.0" prefHeight="28.0" prefWidth="226.0" text="Tipo" textFill="#3e8cda">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="500.0" prefHeight="28.0" prefWidth="226.0" text="Url/Fichero" textFill="#3e8cda">
+         <font>
+            <Font name="DejaVu Serif Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_multimedia" layoutX="380.0" layoutY="205.0" prefHeight="36.0" prefWidth="149.0" />
+      <TextField fx:id="descripcion" layoutX="380.0" layoutY="268.0" prefHeight="36.0" prefWidth="729.0" />
+      <ComboBox fx:id="tipo" layoutX="380.0" layoutY="333.0" prefHeight="36.0" prefWidth="200.0" promptText="Tipo Multimedia" visibleRowCount="5" />
+      <TextField fx:id="url" layoutX="378.0" layoutY="530.0" prefHeight="36.0" prefWidth="729.0" />
+      <Button fx:id="botonSeleccionaImagen" layoutX="145.0" layoutY="535.0" mnemonicParsing="false" onAction="#SeleccionarImagen" prefHeight="31.0" prefWidth="160.0" text="Selecciona Imagen" textFill="#0539f7">
+         <font>
+            <Font name="Constantia" size="16.0" />
+         </font>
+      </Button>
+      <ToolBar layoutX="106.0" layoutY="101.0" prefHeight="68.0" prefWidth="1076.0">
+         <items>
+            <ImageView fitHeight="39.07160949707031" fitWidth="39.90292144249699" onMouseClicked="#NuevoRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/nuevo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="39.0" fitWidth="40.0" onMouseClicked="#GrabaroRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/guardar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.999999737520824" fitWidth="62.666664123535156" onMouseClicked="#UltimoRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.75" fitWidth="61.000002895980195" onMouseClicked="#PrimerRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/4.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.782432556152344" fitWidth="52.685214565812466" onMouseClicked="#SiguienteRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.932432590157966" fitWidth="47.2933349609375" onMouseClicked="#anteriorRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/3.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" onMouseClicked="#BuscarRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView" visible="true">
+               <image>
+                  <Image url="@../Imagenes/buscar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.30517578125" fitWidth="45.30517578125" onMouseClicked="#BorraRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/Borrar.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="imprimeArticulosFabricados" mnemonicParsing="false" onAction="#ImprimeArticulosFabricados" prefHeight="45.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/impresoras.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </items>
+      </ToolBar>
+      <Pane fx:id="PanelBusqueda" layoutX="143.0" layoutY="379.0" prefHeight="109.0" prefWidth="434.0" visible="false">
+         <children>
+            <Button fx:id="SigBusca" layoutX="243.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#SigBuscar" text="Sig." />
+            <Button fx:id="AntBusca" layoutX="307.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#AntBuscar" text="Ant." />
+            <Button fx:id="FinalBusca" layoutX="243.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#FinalizarBuscar" prefHeight="25.0" prefWidth="98.0" text="Finalizar" />
+            <ComboBox fx:id="listacamposBuscar" editable="true" layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="188.0" promptText="Campos Tabla" />
+            <TextField fx:id="PalabraBuscador" layoutX="9.0" layoutY="69.0" prefHeight="25.0" prefWidth="188.0" />
+            <Label layoutX="9.0" layoutY="2.0" prefHeight="25.0" prefWidth="223.0" text="Búsqueda de Registros" textFill="#ff3333" textOverrun="LEADING_ELLIPSIS" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Pane>
+      <Pane fx:id="contenedorMultimedia" layoutX="651.0" layoutY="311.0" opacity="0.74" prefHeight="203.0" prefWidth="450.0" style="-fx-background-color: rgba(175,255,55,0.94);" />
+   
+   </children>
+</Pane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rejilla.InicioRejilla">
+    <children>
+        <TitledPane animated="false" layoutX="10.0" layoutY="34.0" prefHeight="322.0" prefWidth="568.0" text="Productos Fabricados">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="rejillaDatosPF" layoutX="9.0" layoutY="30.0" prefHeight="238.0" prefWidth="543.0">
+                            <columns>
+                                <TableColumn fx:id="columnaId" prefWidth="75.0" text="Id" />
+                                <TableColumn fx:id="columnaDescripcion" prefWidth="115.0" text="Descripcion" />
+                                <TableColumn fx:id="columnaHoras" prefWidth="75.0" text="H. fabrica." />
+                                <TableColumn fx:id="columnaCoste" prefWidth="75.0" text="P:Coste" />
+                                <TableColumn fx:id="columnaVenta" prefWidth="75.0" text="P:.enta" />
+                                <TableColumn fx:id="columnaStock" prefWidth="75.0" text="Stock" />
+                                <TableColumn fx:id="columnaMinimo" prefWidth="75.0" text="S.Mínimo" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>

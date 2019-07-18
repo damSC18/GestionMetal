@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: kotlin-stdlib.jar kotlin-reflect.jar kotlin-test.jar kotli
+ n-stdlib-jdk7.jar kotlin-stdlib-jdk8.jar commons-beanutils-1.9.0.jar 
+ commons-collections-3.2.1.jar commons-digester-2.1.jar commons-loggin
+ g-1.1.1.jar groovy-all-2.0.1.jar gson-2.8.5.jar itext-1.4.7.jar itext
+ -pdfa-5.5.0.jar itextpdf-5.5.0.jar jasperreports-6.0.0.jar mssql-jdbc
+ -7.0.0.jre8.jar
+Main-Class: Inicio
+

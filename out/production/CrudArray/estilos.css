@@ -1,0 +1,8 @@
+
+.ImageView:hover  {
+    -fx-background-color: #383838;
+    -fx-scale-y: 1.2;
+    -fx-scale-x: 1.2;
+    -fx-background-radius: 0 0 18 18;
+    -fx-border-radius: 0 0 18 18;
+}

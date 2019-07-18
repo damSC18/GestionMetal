@@ -1,0 +1,51 @@
+[
+  {
+    "iDarticulo": 1,
+    "Descripcion": "Tornillo 10 X25",
+    "iDfamilia": "1",
+    "precioCoste":"34",
+    "imagen": "Tornillo.jpg"
+  },
+  {
+    "iDarticulo": 11,
+    "Descripcion": "Tornillo cabeza 10 Y25",
+    "iDfamilia": "1",
+    "precioCoste":"34",
+    "imagen": "Tornillo2.jpg"
+  },
+  {"iDarticulo": 12,
+    "Descripcion": "Arandela 12",
+    "iDfamilia": "1",
+    "precioCoste":"123.67",
+    "imagen": "arandela.jpg"
+  },
+  {"iDarticulo": "2",
+    "Descripcion": "Rodamiento Trasero EjeDereco",
+    "iDfamilia": "2",
+    "precioCoste":"10",
+    "imagen": "rodamiento.jpg"
+  },
+  {
+    "iDarticulo": "21",
+    "Descripcion": "Tornillo del 10",
+    "iDfamilia": "1",
+    "precioCoste":"81",
+    "imagen": "animal2.jpg"
+  }
+,
+  {
+    "iDarticulo": "22",
+    "Descripcion": "Rodamiento Doble V",
+    "iDfamilia": "2",
+    "precioCoste":"81",
+    "imagen": "RDobleV.jpg"
+  }
+,
+  {
+    "iDarticulo": "23",
+    "Descripcion": "Rodamiento Doble V",
+    "iDfamilia": "2",
+    "precioCoste":"81",
+    "imagen": "rX_Y_L.jpg"
+  }
+]

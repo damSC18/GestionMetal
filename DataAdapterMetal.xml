@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>DataAdapterMetal</name><driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver><username>sa</username><password>sa_sa_2018@2018sa</password><savePassword>true</savePassword><url>jdbc:sqlserver://localhost:1433;databaseName=Metal</url><database></database><serverAddress></serverAddress><classpath>J:\Basededatos\driver7\sqljdbc_7.0\esn\mssql-jdbc-7.0.0.jre8.jar</classpath></jdbcDataAdapter>

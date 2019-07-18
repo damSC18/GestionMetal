@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorMenu">
+   <children>
+      <ToolBar layoutX="64.0" layoutY="33.0" prefHeight="40.0" prefWidth="743.0">
+        <items>
+          <Button mnemonicParsing="false" text="Presupuestos Presentados">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.43809523809523804">
+                     <stops>
+                        <Stop color="#a8371e" />
+                        <Stop color="#95a31f" offset="0.7684164790457004" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Parte Fabricación">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.43809523809523804">
+                     <stops>
+                        <Stop color="#a8371e" />
+                        <Stop color="#95a31f" offset="0.7684164790457004" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button mnemonicParsing="false" text="Pedidos Materias Primas">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.43809523809523804">
+                     <stops>
+                        <Stop color="#a8371e" />
+                        <Stop color="#95a31f" offset="0.7684164790457004" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="195.0" text="Presupuestos Finalizados">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.43809523809523804">
+                     <stops>
+                        <Stop color="#a8371e" />
+                        <Stop color="#95a31f" offset="0.7684164790457004" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+        </items>
+      </ToolBar>
+      <MenuBar layoutX="64.0" layoutY="87.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Varios">
+              <items>
+                <MenuItem fx:id="menuFinalizarPrincipal" mnemonicParsing="false" onAction="#FinalizarPrincipal" text="Finalizar" />
+                  <MenuItem mnemonicParsing="false" text="Copia de Seguridad" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Clientes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Gestión de clientes" />
+                  <MenuItem mnemonicParsing="false" text="Facturación" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Almacen">
+            <items>
+              <MenuItem fx:id="idMateriasFabricadas" mnemonicParsing="false" onAction="#PantallaMateriasFabricadas" text="Materias Fabricadas" />
+                  <MenuItem mnemonicParsing="false" text="Escandallo " />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Area Tecnica">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca De..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="-192.0" layoutY="265.0" prefHeight="65.0" prefWidth="449.0" rotate="90.0" style="-fx-background-color:ccb;" text="     M       E         T          A         L" textFill="#e4e4e4">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <Button alignment="TOP_LEFT" layoutX="199.0" layoutY="177.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="365.0" text="Materias Primas" textAlignment="RIGHT">
+         <font>
+            <Font name="Impact" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="199.0" layoutY="244.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="365.0" text="Materias Fabricadas" onAction="#PantallaMateriasFabricadas" >
+         <font>
+            <Font name="Impact" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Button>
+      <Button alignment="TOP_LEFT" layoutX="199.0" layoutY="321.0" mnemonicParsing="false" opacity="0.5" prefHeight="25.0" prefWidth="365.0" text="Presupuesto">
+         <font>
+            <Font name="Impact" size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?scenebuilder-background-color 0xccedffff?>
+
+<AnchorPane id="AnchorPane" fx:id="VentanaProducto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Clientes.ControladorClientes">
+  <children>
+    <Pane layoutX="-14.0" prefHeight="699.0" prefWidth="1290.0" stylesheets="@../estilos.css">
+      <children>
+        <TextField   fx:id="idCliente" editable="false" layoutX="195.0" layoutY="134.0" prefHeight="25.0" prefWidth="118.0" />
+        <TextField   fx:id="nombre" layoutX="193.0" layoutY="174.0" prefHeight="25.0" prefWidth="423.0" />
+        <TextField    fx:id="direccion" layoutX="193.0" layoutY="214.0" onInputMethodTextChanged="#SalirCaja" prefWidth="200.0" />
+            <TextField   fx:id="poblacion" layoutX="193.0" layoutY="260.0" prefWidth="200.0" />
+        <TextField   fx:id="provincia" layoutX="194.0" layoutY="301.0" prefWidth="200.0" />
+            <TextField   fx:id="codigoPostal" layoutX="193.0" layoutY="341.0" onInputMethodTextChanged="#SalirCaja" prefHeight="25.0" prefWidth="167.0" />
+            <TextField  fx:id="cif_nif" layoutX="193.0" layoutY="383.0" prefHeight="25.0" prefWidth="167.0" />
+          <TextField fx:id="telefono1" layoutX="193.0" layoutY="430.0" prefWidth="200.0" />
+          <TextField fx:id="telefono2" layoutX="193.0" layoutY="476.0" prefWidth="200.0" />
+          <TextField fx:id="email" layoutX="194.0" layoutY="517.0" prefWidth="200.0" />
+          <TextField fx:id="web" layoutX="193.0" layoutY="557.0" prefHeight="25.0" prefWidth="167.0" />
+
+
+          <TextField fx:id="personaContacto" layoutX="193.0" layoutY="599.0" prefHeight="25.0" prefWidth="167.0" />
+
+          <TextField fx:id="sectorComercial" layoutX="191.0" layoutY="643.0" prefHeight="25.0" prefWidth="167.0" />
+
+
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fffdfd" height="73.0" layoutX="25.0" layoutY="56.0" opacity="0.77" stroke="#8f8f8f" strokeType="INSIDE" width="1223.0" />
+        <Label layoutX="21.0" layoutY="4.0" prefHeight="50.0" prefWidth="153.0" text="Clientes">
+          <font>
+            <Font name="Impact" size="31.0" />
+          </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0e73ee" />
+                        <Stop color="#0e73ee" offset="0.007662835249042145" />
+                        <Stop color="#0a80e1" offset="0.32010111782596656" />
+                        <Stop color="#0b80e0" offset="0.5876288659793815" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+        </Label>
+        <Label layoutX="48.0" layoutY="128.0" styleClass="Label" stylesheets="@../estilos.css" text="id Cliente">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="48.0" layoutY="174.0" prefHeight="25.0" prefWidth="81.0" text="Nombre" />
+        <Label font="$x1" layoutX="49.0" layoutY="214.0" text="Dirección" />
+        <Pane fx:id="PanelBusqueda" layoutX="453.0" layoutY="232.0" prefHeight="107.0" prefWidth="367.0" visible="false">
+          <children>
+            <Button fx:id="SigBusca" layoutX="243.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#SigBuscar" text="Sig." />
+            <Button fx:id="AntBusca" layoutX="307.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#AntBuscar" text="Ant." />
+            <Button fx:id="FinalBusca" layoutX="243.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#FinalizarBuscar" prefHeight="25.0" prefWidth="98.0" text="Finalizar" />
+            <ComboBox fx:id="listacamposBuscar" editable="true" layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="188.0" promptText="Campos Tabla" />
+            <TextField fx:id="PalabraBuscador" layoutX="9.0" layoutY="69.0" prefHeight="25.0" prefWidth="188.0" />
+            <Label layoutX="9.0" layoutY="2.0" prefHeight="25.0" prefWidth="223.0" text="Búsqueda de Registros" textFill="#ff3333" textOverrun="LEADING_ELLIPSIS" underline="true">
+              <font>
+                <Font size="17.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+        <Button layoutX="1066.0" layoutY="75.0" mnemonicParsing="false" onAction="#Finalizar" opacity="0.54" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: black;" text="Salir" textFill="#f5f2f2">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font></Button>
+            <Label font="$x1" layoutX="45.0" layoutY="260.0" text="Población" />
+            <Label font="$x1" layoutX="46.0" layoutY="301.0" text="Provincia" />
+            <Label font="$x1" layoutX="48.0" layoutY="341.0" text="Código Postal" />
+            <Label font="$x1" layoutX="49.0" layoutY="383.0" text="Cif_Nif" />
+            <Label font="$x1" layoutX="46.0" layoutY="599.0" text="Persona Contacto" />
+            <Label font="$x1" layoutX="49.0" layoutY="557.0" text="Web" />
+            <Label font="$x1" layoutX="46.0" layoutY="517.0" text="Email" />
+            <Label font="$x1" layoutX="45.0" layoutY="476.0" text="Teléfono 2" />
+            <Label font="$x1" layoutX="49.0" layoutY="430.0" text="Telefono 1" />
+
+            <Label font="$x1" layoutX="44.0" layoutY="643.0" prefHeight="25.0" prefWidth="135.0" text="Sector Comercial" />
+            <Button layoutX="39.0" layoutY="69.0" mnemonicParsing="false" onAction="#NuevoRegistro" prefHeight="46.0" prefWidth="47.0">
+               <graphic>
+              <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/nuevo.png" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="95.0" layoutY="71.0" mnemonicParsing="false" onAction="#GrabaroRegistro">
+               <graphic>
+              <ImageView fitHeight="46.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/guardar.png" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="163.0" layoutY="66.0" mnemonicParsing="false" onAction="#BorraRegistro" prefHeight="25.0" prefWidth="33.0">
+               <graphic>
+              <ImageView fitHeight="49.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/Borrar.png" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="230.0" layoutY="66.0" mnemonicParsing="false" onAction="#BuscarRegistro">
+               <graphic>
+              <ImageView fitHeight="48.0" fitWidth="47.0" onMouseClicked="#BuscarRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView" visible="true">
+                <image>
+                  <Image url="@../Imagenes/buscar.png" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="293.0" layoutY="64.0" mnemonicParsing="false" onAction="#anteriorRegistro">
+               <graphic>
+              <ImageView fitHeight="47.932432590157966" fitWidth="47.2933349609375" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/3.PNG" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="359.0" layoutY="67.0" mnemonicParsing="false" onAction="#SiguienteRegistro">
+               <graphic>
+              <ImageView fitHeight="44.782432556152344" fitWidth="52.685214565812466" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/2.PNG" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="433.0" layoutY="65.0" mnemonicParsing="false" onAction="#PrimerRegistro">
+               <graphic>
+              <ImageView fitHeight="45.75" fitWidth="61.000002895980195" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/4.PNG" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="499.0" layoutY="64.0" mnemonicParsing="false" onAction="#UltimoRegistro">
+               <graphic>
+              <ImageView fitHeight="46.999999737520824" fitWidth="62.666664123535156" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+                <image>
+                  <Image url="@../Imagenes/1.PNG" />
+                </image>
+              </ImageView>
+               </graphic>
+            </Button>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

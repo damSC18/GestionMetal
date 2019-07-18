@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LArticulosFabricados" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c99ad8bd-df58-40d4-9c9d-c8aa87f18efc">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.xml"/>
+	<parameter name="codigoFamilia" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[1]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[select * from  "ArticulosFabricados" where id_ArticuloFabricado>3001]]>
+	</queryString>
+	<field name="id_ArticuloFabricado" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_ArticuloFabricado"/>
+	</field>
+	<field name="Descripcion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Descripcion"/>
+	</field>
+	<field name="id_Familia" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_Familia"/>
+	</field>
+	<field name="PrecioCoste" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="PrecioCoste"/>
+	</field>
+	<field name="PrecioVenta" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.label" value="PrecioVenta"/>
+	</field>
+	<field name="Stock" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="Stock"/>
+	</field>
+	<field name="StockMinimo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="StockMinimo"/>
+	</field>
+	<field name="Imagen" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Imagen"/>
+	</field>
+	<group name="id_Familia">
+		<groupExpression><![CDATA[$F{id_Familia}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="58" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="9" width="440" height="41" uuid="c63652f6-e8e5-4921-9105-57b718d1f0a4"/>
+				<textElement>
+					<font fontName="Microsoft Sans Serif" size="24" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Listado Articulo Fabricados]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="72" height="30" uuid="106bdac0-4316-41dc-bfec-e9f394dec1e1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa690c7e-4642-47e6-bb1e-dfcb1b744f6a"/>
+				</reportElement>
+				<text><![CDATA[Descripcion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="0" width="69" height="30" uuid="dcca4c15-48d1-4e9e-b679-4419cdab319d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5d9d4f4-1cd7-44d5-b155-46017200df47"/>
+				</reportElement>
+				<text><![CDATA[id_Familia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="69" height="30" uuid="ea1c0557-f169-49fd-a743-11b4321f0209">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a41ee6a5-3d3c-4f4c-97dc-4696295c02d5"/>
+				</reportElement>
+				<text><![CDATA[PrecioCoste]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="0" width="69" height="30" uuid="2dd5748b-c8df-4b58-b5e9-7840b452754f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6aff5fb-fa0e-4528-8266-4a4086373339"/>
+				</reportElement>
+				<text><![CDATA[PrecioVenta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="69" height="30" uuid="4ee5f1d6-e649-4dc9-b01c-793db60d6a98">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d5b1ff93-fb53-43c8-bde9-05345819db5e"/>
+				</reportElement>
+				<text><![CDATA[Stock]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="0" width="69" height="30" uuid="59116c74-7d19-42d1-8f5a-c81fc6411e26">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3f1e2b8-afa6-4fbe-bb50-3dd6be4a3fce"/>
+				</reportElement>
+				<text><![CDATA[StockMinimo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="69" height="30" uuid="493493c7-5209-4b59-b4ed-c31f1dd4dd56">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4130c4b9-b452-4314-800c-207e99462de1"/>
+				</reportElement>
+				<text><![CDATA[Imagen]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="72" height="30" uuid="2bc8c8e5-03f8-4484-ab81-0a4a8b2adc3d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fa690c7e-4642-47e6-bb1e-dfcb1b744f6a"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="0" width="69" height="30" uuid="383c6ba7-8e62-4526-b316-7bd6fc9bdad5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5d9d4f4-1cd7-44d5-b155-46017200df47"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id_Familia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="69" height="30" uuid="05532e0c-e602-4c1c-88d5-65d430f9c738">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a41ee6a5-3d3c-4f4c-97dc-4696295c02d5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PrecioCoste}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="69" height="30" uuid="46badb75-51f7-499a-a2df-64879d96b14a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6aff5fb-fa0e-4528-8266-4a4086373339"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{PrecioVenta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="69" height="30" uuid="6c933fda-b744-4819-9ba1-16df8ed126bc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d5b1ff93-fb53-43c8-bde9-05345819db5e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Stock}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="0" width="69" height="30" uuid="c9684bf3-2026-407c-a2d5-698dcc9599d4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c3f1e2b8-afa6-4fbe-bb50-3dd6be4a3fce"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{StockMinimo}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="420" y="0" width="50" height="50" uuid="77bec3f4-67a2-452b-818f-7e75351838a0"/>
+				<imageExpression><![CDATA[$F{Imagen}]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

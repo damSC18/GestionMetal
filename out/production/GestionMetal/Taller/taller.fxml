@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Taller.ControladorTaller">
+   <children>
+      <Label layoutX="-329.0" layoutY="372.0" prefHeight="71.0" prefWidth="772.0" rotate="-90.0" style="-fx-background-color:ccb;" text="                 M        E          T          A          L    " textFill="WHITE">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="343.0" layoutY="46.0" prefHeight="46.0" prefWidth="837.0">
+         <items>
+            <Button fx:id="botonEscandallos1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Finalizar" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Salir " textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="botonEscandallos11" alignment="TOP_LEFT" mnemonicParsing="false" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Acerca de ..." textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+          
+         </items>
+      </ToolBar>
+      <Label layoutX="94.0" layoutY="21.0" prefHeight="71.0" prefWidth="248.0" style="-fx-background-color:ccb;" text="        TALLER            " textFill="WHITE" underline="true">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="119.0" text="Id Presupueso :" textFill="#9e0393" />
+      <Label layoutX="436.0" layoutY="215.0" text="Desde Fecha" textFill="#9e0393" />
+      <Label layoutX="105.0" layoutY="237.0" text="Cliente" textFill="#9e0393" />
+      <TextField fx:id="nombreCliente" layoutX="277.0" layoutY="233.0" onKeyReleased="#buscaClientes" prefHeight="26.0" prefWidth="136.0" promptText="Nombre Cliente" />
+      <Pane fx:id="PanelBusqueda" layoutX="100.0" layoutY="109.0" prefHeight="107.0" prefWidth="313.0">
+         <children>
+            <Button fx:id="SigBusca" layoutX="203.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#SigBuscar" text="Sig." />
+            <Button fx:id="AntBusca" layoutX="261.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#AntBuscar" text="Ant." />
+            <ComboBox fx:id="listacamposBuscar" layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="188.0" promptText="Campos Tabla">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="PalabraBuscador" layoutX="9.0" layoutY="69.0" prefHeight="25.0" prefWidth="297.0" promptText="Introduce el dato a buscar" />
+            <Label layoutX="9.0" layoutY="2.0" prefHeight="26.0" prefWidth="297.0" text="Búsqueda Presupuestos" textFill="#ff3333" textOverrun="LEADING_ELLIPSIS" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="presupuestoEncontradoParaAñadir" layoutX="436.0" layoutY="140.0" prefHeight="71.0" prefWidth="469.0" text="Descripción" textFill="#2053ea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="idPresupuestoEncontradoParaAñadir" layoutX="532.0" layoutY="115.0" prefHeight="26.0" prefWidth="126.0" text="Id Presupuesto" textFill="#2053ea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <TextField fx:id="idCliente" layoutX="156.0" layoutY="233.0" onKeyReleased="#buscaClientes" prefHeight="25.0" prefWidth="111.0" promptText="Id" />
+      <Label fx:id="clienteEncontrado" layoutX="105.0" layoutY="267.0" prefHeight="25.0" prefWidth="305.0" text="Cliente" />
+      <Label layoutX="710.0" layoutY="207.0" prefHeight="17.0" prefWidth="126.0" text="Estado Presupuesto" textFill="#9e0393" />
+      <Label layoutX="438.0" layoutY="245.0" text="Hasta Fecha" textFill="#9e0393" />
+      <TableView fx:id="rejillaRegistrosPresupuestor" editable="true" layoutX="105.0" layoutY="322.0" prefHeight="432.0" prefWidth="1076.0">
+        <columns>
+          <TableColumn fx:id="cIdPresupuesto" prefWidth="93.0" text="ID_Presupuesto" />
+          <TableColumn fx:id="cCliente" prefWidth="379.0" text="Cliente" />
+            <TableColumn fx:id="cFecha" prefWidth="56.0" text="Fecha" />
+            <TableColumn fx:id="cDescripcion" prefWidth="490.0" text="Descripción" />
+            <TableColumn fx:id="cEstado" minWidth="0.0" prefWidth="52.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Button fx:id="bBuscar" layoutX="872.0" layoutY="178.0" mnemonicParsing="false" onAction="#buscarPresupuestos" prefHeight="57.0" prefWidth="221.0" style="-fx-background-color: ccb;" text="Buscar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="34.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="estadoPresupuesto" layoutX="710.0" layoutY="228.0" prefWidth="150.0" />
+      <DatePicker fx:id="desdeFechaPresupuesto" layoutX="526.0" layoutY="214.0" prefHeight="25.0" prefWidth="160.0" />
+      <DatePicker fx:id="hastaFechaPresupuesto" layoutX="526.0" layoutY="242.0" prefHeight="25.0" prefWidth="160.0" />
+      <Label layoutX="105.0" layoutY="307.0" prefHeight="17.0" prefWidth="441.0" text="Para borrar un presupuesto haga doble click en el campo ID_Preuspuesto" textFill="#a4c675">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="bInicializar" layoutX="872.0" layoutY="101.0" mnemonicParsing="false" onAction="#inicializarBusqueda" prefHeight="71.0" prefWidth="221.0" style="-fx-background-color: ccb;" text="Inicializar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="bImprimir" layoutX="872.0" layoutY="253.0" mnemonicParsing="false" onAction="#ImprimirParteTaller" prefHeight="57.0" prefWidth="221.0" style="-fx-background-color: ccb;" text="Imprimir" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="34.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

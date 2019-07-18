@@ -1,0 +1,58 @@
+[
+  {
+    "idFamilia": "1",
+    "Familia": "Tornillo"
+
+  },
+  {"idFamilia": "2",
+    "Familia": "Rodamientos"
+  },
+  {
+    "idFamilia": "3",
+    "Familia": "Fungibles"
+
+  },
+  {"idFamilia": "4",
+    "Familia": "Herramienta Manual"
+  },
+  {
+    "idFamilia": "5",
+    "Familia": "Herramienta Mecánica"
+
+  },
+  {"idFamilia": "6",
+    "Familia": "Ruedas"
+  },
+  {
+    "idFamilia": "7",
+    "Familia": "Neumaticos"
+
+  },
+  {"idFamilia": "8",
+    "Familia": "Acero"
+  },
+  {
+    "idFamilia": "9",
+    "Familia": "Hierro"
+
+  },
+  {"idFamilia": "10",
+    "Familia": "Chapa"
+  },
+  {
+    "idFamilia": "11",
+    "Familia": "Aluminio"
+
+  },
+  {"idFamilia": "12",
+    "Familia": "Mano de Obra"
+  },
+  {
+    "idFamilia": "13",
+    "Familia": "Dron"
+
+  },
+  {"idFamilia": "14",
+    "Familia": "Varios"
+  } 
+]

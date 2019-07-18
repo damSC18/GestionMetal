@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="KotlinJavaRuntime">
+    <CLASSES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/commons-beanutils-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/groovy-all-2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/gson-2.8.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/itext-1.4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/itext-pdfa-5.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/itextpdf-5.5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/jasperreports-6.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/mssql-jdbc-7.0.0.jre8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-reflect-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-test-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk7-sources.jar!/" />
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-jdk8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="ContenedorPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="863.0" prefWidth="1299.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="escandallos.ControladorArticulos">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.0" minWidth="-Infinity" prefWidth="371.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="800.0" minWidth="10.0" prefWidth="729.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="169.0" minHeight="30.0" prefHeight="31.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="169.0" minHeight="30.0" prefHeight="31.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="441.0" minHeight="10.0" prefHeight="434.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="292.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="292.0" minHeight="10.0" prefHeight="210.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="1240.0" style="-fx-background-color: pink;" GridPane.columnSpan="2147483647">
+         <menus>
+            <Menu mnemonicParsing="false" text="Edición pestañas">
+               <items>
+                  <MenuItem fx:id="BorrarPestañaActual" mnemonicParsing="false" onAction="#borraPestaña" text="Borrar Pestaña Actual" />
+               </items>
+            </Menu>
+            <Menu fx:id="articulosAFabricacion" mnemonicParsing="false" text="Articulos en Fabricación">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#GrabarArticuloFabricado" text="Grabar Articulos Fabricados" />
+                  <MenuItem fx:id="AñadirJugador" mnemonicParsing="false" onAction="#generarPdf" text="Imprimir Artículos Fabricados" />
+               </items>
+            </Menu>
+            <Menu fx:id="MenuTab" mnemonicParsing="false" text="Ayuda">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Ayuda">
+                     <graphic>
+                        <ComboBox fx:id="TipoAyuda" onAction="#VisualizarAyuda" prefWidth="150.0" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+            </Menu>
+         </menus>
+         <GridPane.margin>
+            <Insets bottom="5.0" />
+         </GridPane.margin>
+      </MenuBar>
+      <ToolBar prefHeight="40.0" prefWidth="1223.0" style="-fx-background-color: olive;" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+         <items>
+            <Button mnemonicParsing="false" onAction="#CargarFamilias" prefHeight="25.0" prefWidth="289.0" text="Carga Datos Familias Articulos Materias Primas" />
+            <Button fx:id="botonFinalizar" mnemonicParsing="false" onAction="#Finalizar" prefHeight="25.0" prefWidth="178.0" text="Finalizar" />
+         </items>
+         <GridPane.margin>
+            <Insets bottom="5.0" />
+         </GridPane.margin>
+      </ToolBar>
+      <VBox prefHeight="439.0" prefWidth="340.0" GridPane.rowIndex="2">
+         <children>
+            <Label prefHeight="17.0" prefWidth="276.0" text="Familias" />
+            <Pagination fx:id="ListaEquipos" prefHeight="338.0" prefWidth="397.0" style="-fx-border-color: green;" />
+         </children>
+         <padding>
+            <Insets right="40.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="65.0" prefWidth="638.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+         <children>
+            <Label fx:id="articuloAFabricar" prefHeight="17.0" prefWidth="256.0" text="Artículo a Fabricar" />
+            <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0">
+               <items>
+                  <TextField fx:id="articuloFabricacion" prefHeight="25.0" prefWidth="1076.0" />
+                  <Button mnemonicParsing="false" onAction="#crearTablaArticuloFabricado" prefHeight="25.0" prefWidth="196.0" text="Crear Pestaña Articulo Fabricado" />
+               </items>
+            </SplitPane>
+         </children>
+         <GridPane.margin>
+            <Insets right="50.0" top="10.0" />
+         </GridPane.margin>
+      </VBox>
+      <TabPane fx:id="tablas" prefHeight="186.0" prefWidth="1144.0" style="-fx-border-radius: 25; -fx-border-color: cyan;" tabClosingPolicy="UNAVAILABLE" GridPane.columnSpan="2147483647" GridPane.rowIndex="4" />
+      <TableView fx:id="rejillaDatosCodigo" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+   </padding>
+</GridPane>

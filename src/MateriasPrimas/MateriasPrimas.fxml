@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?scenebuilder-background-color 0xccedffff?>
+
+<AnchorPane id="AnchorPane" fx:id="VentanaProducto" prefHeight="506.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MateriasPrimas.ControladorMateriasPrimas">
+  <children>
+    <Pane prefHeight="595.0" prefWidth="1032.0">
+      <children>
+        <TextField id="CODIGO" fx:id="idProducto" editable="false" layoutX="199.0" layoutY="167.0" prefHeight="25.0" prefWidth="188.0" />
+        <TextField id="LOTER" fx:id="descripcion" layoutX="194.0" layoutY="220.0" prefHeight="63.0" prefWidth="200.0" />
+        <TextField id="PICO" fx:id="idFamilia" layoutX="193.0" layoutY="298.0" prefWidth="200.0" />
+        <TextField id="PICO" fx:id="precioCoste" layoutX="193.0" layoutY="348.0" prefWidth="200.0" />
+        <Button id="BTNnuevo" layoutX="56.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#NuevoRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/nuevo.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNguardar" layoutX="118.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#GrabarRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/save.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNeliminar" layoutX="181.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#BorraRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/Borrar.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNbuscar" layoutX="245.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#BuscarRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/buscar.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNprimero" layoutX="313.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#anteriorRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/3.PNG" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNanterior" layoutX="373.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#SiguienteRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="69.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/2.PNG" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNsiguiente" layoutX="440.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#PrimerRegistro" pickOnBounds="true" prefHeight="48.0" prefWidth="63.0">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#PrimerRegistro" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/4.PNG" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNultimo" layoutX="511.0" layoutY="58.0" mnemonicParsing="false" onMouseClicked="#UltimoRegistro" pickOnBounds="true">
+          <graphic>
+            <ImageView fitHeight="49.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/1.PNG" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNlista" layoutX="580.0" layoutY="60.0" mnemonicParsing="false" onAction="#VisualizaRejilla">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/lista.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Button id="BTNImprimir" layoutX="647.0" layoutY="58.0" mnemonicParsing="false" onAction="#ImprimeArticulosFabricados">
+          <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../Imagenes/impresoras.png" />
+              </image>
+            </ImageView>
+          </graphic>
+        </Button>
+        <Label layoutX="47.0" layoutY="167.0" styleClass="Label" stylesheets="@../estilos.css" text="ID Materia" textFill="#111010">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="43.0" layoutY="220.0" text="Descripcion" textFill="#111010" />
+        <Label font="$x1" layoutX="49.0" layoutY="298.0" text="ID Familia" textFill="#111010" />
+        <TableView fx:id="TablaRegistros" focusTraversable="false" layoutX="42.0" layoutY="245.0" prefHeight="150.0" prefWidth="529.999977929685" visible="false" />
+        <Pane fx:id="PanelBusqueda" layoutX="559.0" layoutY="167.0" prefHeight="107.0" prefWidth="423.0" visible="false">
+          <children>
+            <Button fx:id="SigBusca" layoutX="243.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#SigBuscar" text="Sig." textFill="#f9fffb" />
+            <Button fx:id="AntBusca" layoutX="307.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#AntBuscar" text="Ant." textFill="#f9fffb" />
+            <Button fx:id="FinalBusca" layoutX="243.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#FinalizarBuscar" prefHeight="25.0" prefWidth="98.0" text="Finalizar" textFill="#f9fffb" />
+            <ComboBox fx:id="listacamposBuscar" editable="true" layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="188.0" promptText="Campos Tabla" />
+            <TextField fx:id="PalabraBuscador" layoutX="9.0" layoutY="69.0" prefHeight="25.0" prefWidth="188.0" />
+            <Label layoutX="9.0" layoutY="2.0" prefHeight="25.0" prefWidth="223.0" text="Búsqueda de Registros" textFill="#9eafff" textOverrun="LEADING_ELLIPSIS" underline="true">
+              <font>
+                <Font size="17.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+        <Label font="$x1" layoutX="40.0" layoutY="348.0" text="Precio Coste" textFill="#171717" />
+        <TextField fx:id="ficheroImagen" layoutX="193.0" layoutY="426.0" prefHeight="25.0" prefWidth="423.0" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="418.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="14.0" prefHeight="50.0" prefWidth="320.0" text="Materias Primas">
+               <font>
+                  <Font name="Impact" size="31.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#0e73ee" />
+                        <Stop color="#0e73ee" offset="0.007662835249042145" />
+                        <Stop color="#0a80e1" offset="0.32010111782596656" />
+                        <Stop color="#0b80e0" offset="0.5876288659793815" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="832.0" layoutY="63.0" mnemonicParsing="false" onAction="#Finalizar" opacity="0.54" prefHeight="31.0" prefWidth="150.0" style="-fx-background-color: black;" text="Salir" textFill="#f5f2f2">
+               <font>
+                  <Font name="Impact" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="21.0" layoutY="422.0" mnemonicParsing="false" onAction="#SeleccionarImagen" opacity="0.66" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: black;" text="Selecciona Imagen" textFill="#eef0f5">
+               <font>
+                  <Font name="Impact" size="16.0" />
+               </font>
+            </Button>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

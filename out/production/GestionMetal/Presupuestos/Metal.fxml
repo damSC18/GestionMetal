@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorMenu">
+   <children>
+      <ToolBar layoutX="96.0" layoutY="33.0" prefHeight="46.0" prefWidth="1076.0">
+         <items>
+            <Button fx:id="botonEscandallos1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#FinalizarPrincipal" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Salir de la Aplicación" textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="botonEscandallos11" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#FinalizarPrincipal" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Acerca de ..." textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </items>
+      </ToolBar>
+      <Label layoutX="-276.0" layoutY="296.0" prefHeight="64.0" prefWidth="644.0" rotate="90.0" style="-fx-background-color: #726d6d;" text="                 M        E          T          A          L    ">
+         <font>
+            <Font name="Impact" size="45.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0201117a" />
+                  <Stop color="#0201117a" offset="0.007662835249042145" />
+                  <Stop color="#0303037a" offset="0.34865900383141757" />
+                  <Stop color="#999d9ec9" offset="0.8544061302681992" />
+                  <Stop color="#7e8f94c9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TitledPane animated="false" layoutX="110.0" layoutY="92.0" prefHeight="502.0" prefWidth="492.0" text="Almacén ">
+         <font>
+            <Font name="Impact" size="29.0" />
+         </font>
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="442.0">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="33.0" layoutY="122.0" mnemonicParsing="false" onAction="#PantallaMateriasPrimas" prefHeight="44.0" prefWidth="424.0" style="-fx-background-color: #726d6d;" text="Materias Primas" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="33.0" layoutY="48.0" mnemonicParsing="false" onAction="#PantallaMateriasFabricadas" prefHeight="44.0" prefWidth="426.0" style="-fx-background-color: #726d6d;" text="Productos Fabricados" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="botonEscandallos" alignment="TOP_LEFT" layoutX="33.0" layoutY="199.0" mnemonicParsing="false" onAction="#PantallaEscandallos" prefHeight="44.0" prefWidth="423.0" style="-fx-background-color: #726d6d;" text="Escandallos" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="botonEscandallos2" alignment="TOP_LEFT" layoutX="33.0" layoutY="274.0" mnemonicParsing="false" onAction="#PantallaEscandallos" prefHeight="44.0" prefWidth="425.0" style="-fx-background-color: #726d6d;" text="Familias" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="34.0" layoutY="354.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="424.0" style="-fx-background-color: #726d6d;" text="Pedidos Materias Primas" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+         <textFill>
+            <RadialGradient centerX="0.4277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#125fe3b1" />
+                  <Stop color="#1263de54" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="649.0" layoutY="358.0" prefHeight="236.0" prefWidth="498.0" text="Presupuestos">
+         <font>
+            <Font name="Impact" size="29.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#125fe3b1" />
+                  <Stop color="#1263de54" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="178.0" prefWidth="473.0">
+               <children>
+                <Button alignment="TOP_LEFT" layoutX="31.0" layoutY="67.0" mnemonicParsing="false" onAction="#PresupuestosPresentados" prefHeight="44.0" prefWidth="435.0" style="-fx-background-color: #726d6d;" text="Presupuestos Presentados" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="29.0" layoutY="120.0" mnemonicParsing="false" onAction="#tallerFabricacion" prefHeight="44.0" prefWidth="438.0" style="-fx-background-color: #726d6d;" text="Parte de Fabricación para Taller" textFill="WHITE">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="31.0" layoutY="14.0" mnemonicParsing="false" onAction="#GestionClientes" prefHeight="44.0" prefWidth="435.0" style="-fx-background-color: #726d6d;" text="Clientes" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="648.0" layoutY="90.0" prefHeight="252.0" prefWidth="498.0" text="Multimedia e Idiomas">
+         <font>
+            <Font name="Impact" size="29.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4277777777777778" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#125fe3b1" />
+                  <Stop color="#1263de54" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="194.0" prefWidth="460.0">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#PantallaMultimedia" prefHeight="44.0" prefWidth="426.0" style="-fx-background-color: #726d6d;" text="Archivos Multimedia" textFill="#f8f4f4">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="32.0" layoutY="78.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="429.0" style="-fx-background-color: #726d6d;" text="Tabla Idiomas" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="32.0" layoutY="135.0" mnemonicParsing="false" onAction="#DatosIdiomasArticulos" prefHeight="44.0" prefWidth="429.0" style="-fx-background-color: #726d6d;" text="Datos Técnicos, Mantenimiento y Montaje" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Impact" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+   </children>
+</Pane>

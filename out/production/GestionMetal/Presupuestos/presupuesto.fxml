@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="1211.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presupuestos.ControladorPresupuestos">
+   <children>
+      <Label layoutX="-329.0" layoutY="372.0" prefHeight="71.0" prefWidth="772.0" rotate="-90.0" style="-fx-background-color:ccb;" text="                 M        E          T          A          L    " textFill="WHITE">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="343.0" layoutY="46.0" prefHeight="46.0" prefWidth="837.0">
+         <items>
+            <Button fx:id="botonEscandallos1" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#Finalizar" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Salir " textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="botonEscandallos11" alignment="TOP_LEFT" mnemonicParsing="false" opacity="0.5" prefHeight="36.0" prefWidth="236.0" style="-fx-background-color: black;" text="Acerca de ..." textFill="#fcf6f6">
+               <cursor>
+                  <Cursor fx:constant="WAIT" />
+               </cursor>
+               <font>
+                  <Font name="Impact" size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="45.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+         </items>
+      </ToolBar>
+      <Label layoutX="94.0" layoutY="21.0" prefHeight="71.0" prefWidth="248.0" style="-fx-background-color:ccb;" text="PRESUPUESTOS " textFill="WHITE" underline="true">
+         <font>
+            <Font name="Impact" size="39.0" />
+         </font>
+      </Label>
+      <Accordion fx:id="ContenedorLineasPresupuesto" layoutX="93.0" layoutY="358.0" prefHeight="436.0" prefWidth="1087.0" />
+      <Button alignment="BASELINE_LEFT" defaultButton="true" layoutX="94.0" layoutY="284.0" mnemonicParsing="false" onAction="#AñadirLineaPresupuesto" prefHeight="25.0" prefWidth="126.0" text="Añadir Linea" textFill="#9007eb" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Button>
+      <TextField fx:id="descripcionLinea" layoutX="231.0" layoutY="284.0" prefHeight="26.0" prefWidth="211.0" promptText="Descripción linea  prtesupuesto" />
+      <ComboBox fx:id="SelecionIdiomas" layoutX="593.0" layoutY="284.0" prefWidth="150.0" promptText="Idioma">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="103.0" layoutY="171.0" text="Id Presupueso" textFill="#9e0393" />
+      <Label layoutX="103.0" layoutY="199.0" text="Descripción" textFill="#9e0393" />
+      <Label layoutX="771.0" layoutY="171.0" text="Fecha" textFill="#9e0393" />
+      <DatePicker fx:id="fechaPresupuesto" layoutX="809.0" layoutY="167.0" />
+      <Label layoutX="238.0" layoutY="170.0" text="Cliente" textFill="#9e0393" />
+      <Label fx:id="idPresupuesto" layoutX="187.0" layoutY="160.0" prefHeight="36.0" prefWidth="47.0" text="0" />
+      <TextField fx:id="nombreCliente" layoutX="287.0" layoutY="183.0" onKeyReleased="#buscaClientes" prefHeight="26.0" prefWidth="111.0" promptText="Nombre Cliente" />
+      <TextArea fx:id="descripcionPresupuesto" layoutX="192.0" layoutY="208.0" prefHeight="71.0" prefWidth="553.0" />
+      <Button alignment="BASELINE_LEFT" defaultButton="true" layoutX="451.0" layoutY="284.0" mnemonicParsing="false" onAction="#BorrarLineaPresupuesto" prefHeight="25.0" prefWidth="111.0" text="Borrar Linea" textFill="#9007eb" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Button>
+      <ToolBar layoutX="103.0" layoutY="92.0" prefHeight="58.0" prefWidth="1076.0">
+         <items>
+            <ImageView fitHeight="39.07160949707031" fitWidth="39.90292144249699" onMouseClicked="#NuevoRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/nuevo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.75" fitWidth="61.0" onMouseClicked="#GrabaroRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/guardar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="46.999999737520824" fitWidth="62.666664123535156" onMouseClicked="#UltimoRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.75" fitWidth="61.000002895980195" onMouseClicked="#PrimerRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/4.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.782432556152344" fitWidth="52.685214565812466" onMouseClicked="#SiguienteRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.932432590157966" fitWidth="47.2933349609375" onMouseClicked="#anteriorRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/3.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" onMouseClicked="#BuscarRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView" visible="true">
+               <image>
+                  <Image url="@../Imagenes/buscar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.30517578125" fitWidth="45.30517578125" onMouseClicked="#BorraRegistro" pickOnBounds="true" preserveRatio="true" styleClass="ImageView">
+               <image>
+                  <Image url="@../Imagenes/Borrar.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="imprimeArticulosFabricados" mnemonicParsing="false" onAction="#ImprimeArticulosFabricados" prefHeight="45.0" prefWidth="50.0">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Imagenes/impresoras.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </items>
+      </ToolBar>
+      <Pane fx:id="PanelBusqueda" layoutX="771.0" layoutY="216.0" prefHeight="107.0" prefWidth="409.0">
+         <children>
+            <Button fx:id="SigBusca" layoutX="243.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#SigBuscar" text="Sig." />
+            <Button fx:id="AntBusca" layoutX="307.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#AntBuscar" text="Ant." />
+            <Button fx:id="FinalBusca" layoutX="243.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#FinalizarBuscar" prefHeight="25.0" prefWidth="98.0" text="Finalizar" />
+            <ComboBox fx:id="listacamposBuscar" layoutX="9.0" layoutY="32.0" prefHeight="25.0" prefWidth="188.0" promptText="Campos Tabla">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></ComboBox>
+            <TextField fx:id="PalabraBuscador" layoutX="9.0" layoutY="69.0" prefHeight="25.0" prefWidth="188.0" />
+            <Label layoutX="9.0" layoutY="2.0" prefHeight="26.0" prefWidth="392.0" text="Búsqueda Articulos Fabricados" textFill="#ff3333" textOverrun="LEADING_ELLIPSIS" underline="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="ArticuloEncontradoParaAñadir" layoutX="103.0" layoutY="325.0" prefHeight="25.0" prefWidth="452.0" text="Artículo Buscado" textFill="#2053ea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CodigoArticuloEncontradoParaAñadir" layoutX="592.0" layoutY="324.0" prefHeight="26.0" prefWidth="126.0" text="Código Artículo " textFill="#2053ea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button alignment="BASELINE_LEFT" defaultButton="true" layoutX="770.0" layoutY="325.0" mnemonicParsing="false" onAction="#AñadirArticuloAlaLineaPresupuestoActual" prefHeight="25.0" prefWidth="409.0" text="Añadir Articulo al Presupuesto" textFill="#5b6da8" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Button>
+      <Separator prefWidth="200.0" />
+      <TextField fx:id="idCliente" layoutX="285.0" layoutY="155.0" onKeyReleased="#buscaClientes" prefHeight="25.0" prefWidth="111.0" promptText="Id" />
+      <Label fx:id="clienteEncontrado" layoutX="400.0" layoutY="160.0" prefHeight="36.0" prefWidth="350.0" text="Cliente" />
+      <Label layoutX="1025.0" layoutY="163.0" prefHeight="17.0" prefWidth="126.0" text="Estado Presupuesto" textFill="#9e0393" />
+      <ComboBox fx:id="estadoPresupuesto" layoutX="1018.0" layoutY="185.0" prefWidth="150.0" promptText="Presentado">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ComboBox>
+   </children>
+</Pane>

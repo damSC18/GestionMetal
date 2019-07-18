@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="GestionMetal:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GestionMetal_jar</output-path>
+    <root id="root">
+      <element id="archive" name="GestionMetal.jar">
+        <element id="module-output" name="GestionMetal" />
+      </element>
+      <element id="library" level="project" name="KotlinJavaRuntime" />
+    </root>
+  </artifact>
+</component>
